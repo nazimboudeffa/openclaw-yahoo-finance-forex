@@ -151,15 +151,15 @@ class YahooFinanceForexSkill:
                 try:
                     base_ticker = yf.Ticker(f"{base}=X")
                     news_data.extend(base_ticker.news if hasattr(base_ticker, 'news') else [])
-                except:
-                    pass
+                except Exception as e:
+                    print(f"⚠️ Could not fetch news for {base}: {e}")
                 # Try quote currency if it's not USD (USD news is usually abundant)
                 if quote != "USD":
                     try:
                         quote_ticker = yf.Ticker(f"{quote}=X")
                         news_data.extend(quote_ticker.news if hasattr(quote_ticker, 'news') else [])
-                    except:
-                        pass
+                    except Exception as e:
+                        print(f"⚠️ Could not fetch news for {quote}: {e}")
             
             # Format news articles
             formatted_news = []

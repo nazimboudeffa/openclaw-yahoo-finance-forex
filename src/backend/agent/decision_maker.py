@@ -10,8 +10,7 @@ import requests
 from typing import Dict, List, Optional
 from src.backend.config_loader import CONFIG
 
-# Set up logging
-logging.basicConfig(level=logging.INFO)
+# Get logger (configuration is done in main.py)
 logger = logging.getLogger(__name__)
 
 # Try to import FOREX skill
