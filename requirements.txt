@@ -1,0 +1,13 @@
+# OpenClaw FOREX Bot - Python Dependencies
+
+# Yahoo Finance
+yfinance>=0.2.40
+
+# Environment & Configuration
+python-dotenv>=1.0.0
+
+# HTTP Requests
+requests>=2.31.0
+
+# Async Support
+asyncio>=3.4.3
