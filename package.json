@@ -1,0 +1,40 @@
+{
+  "name": "openclaw-yahoo-finance-forex",
+  "version": "1.0.0",
+  "description": "OpenClaw skill for FOREX analysis using Yahoo Finance - provides real-time news and market data for major currency pairs",
+  "main": "SKILL.md",
+  "scripts": {
+    "fetch": "python3 scripts/fetch_forex_news.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nazimboudeffa/openclaw-yahoo-finance-forex.git"
+  },
+  "keywords": [
+    "openclaw",
+    "forex",
+    "trading",
+    "yahoo-finance",
+    "currency",
+    "exchange-rates",
+    "sentiment-analysis",
+    "ai-assistant",
+    "llm",
+    "skill"
+  ],
+  "author": "Nazim Boudeffa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nazimboudeffa/openclaw-yahoo-finance-forex/issues"
+  },
+  "homepage": "https://github.com/nazimboudeffa/openclaw-yahoo-finance-forex#readme",
+  "openclaw": {
+    "type": "skill",
+    "emoji": "💱",
+    "category": "finance",
+    "requires": {
+      "bins": ["python3"],
+      "packages": ["yfinance>=0.2.40"]
+    }
+  }
+}
